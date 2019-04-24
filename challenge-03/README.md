@@ -174,25 +174,20 @@ método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
 pessoa.apresentacao = function() {
-	var tSexo;
+	var tSexo = 'o';
+	var tIdade = 'anos';
+	var tMetrosCaminhados = 'metros';
+
 	if (pessoa.sexo === 'Feminino') {
 		tSexo = 'a';
-	} else {
-		tSexo = 'o';
 	};
-
-	var tIdade;
+	
 	if (pessoa.idade === 1) {
 		tIdade = 'ano';
-	} else {
-		tIdade = 'anos';
 	};
-
-	var tMetrosCaminhados;
+	
 	if (pessoa.caminhouQuantosMetros === 1) {
 		tMetrosCaminhados = 'metro';
-	} else {
-		tMetrosCaminhados = 'metros';
 	};
 
 	return 'Olá, eu sou '+ tSexo + ' ' +pessoa.nome+' '+pessoa.sobrenome+', tenho '+pessoa.idade+' '+tIdade+', '+pessoa.altura+', meu peso é '+pessoa.peso+' e, só hoje, eu já caminhei '+pessoa.caminhouQuantosMetros+' '+ tMetrosCaminhados+'!';
