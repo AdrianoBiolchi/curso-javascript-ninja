@@ -92,7 +92,7 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
             hexa = '#FFA500';
             break;
             default:
-            return 'Não temos o equivalente hexadecimal para '+color+'.';
+            return 'Não temos o equivalente hexadecimal para '+color+'.';   
             break;
         }
         return 'O hexadecimal para a cor '+color+' é '+hexa+'.';
